@@ -1,6 +1,6 @@
 {
   "name": "store-esm",
-  "version": "2.0.12",
+  "version": "3.0.0",
   "description": "A localStorage wrapper for all browsers without using cookies or flash. Uses localStorage, globalStorage, and userData behavior under the hood",
   "main": "dist/store.legacy.js",
   "scripts": {
@@ -46,7 +46,10 @@
       "print": false
     },
     "rules": {
-      "comma-dangle": ["error", "only-multiline"],
+      "comma-dangle": [
+        "error",
+        "only-multiline"
+      ],
       "no-unused-vars": [
         "error",
         {
