@@ -1,10 +1,10 @@
-var util = require('../src/util')
+import util from '../src/util.js'
 var slice = util.slice
 var assign = util.assign
 
-var updatePlugin = require('./update')
+import updatePlugin from './update.js'
 
-module.exports = [updatePlugin, operationsPlugin]
+export default [updatePlugin, operationsPlugin]
 
 function operationsPlugin() {
 	return {

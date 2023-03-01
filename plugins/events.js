@@ -1,10 +1,10 @@
-var util = require('../src/util')
+import util from '../src/util.js'
 var bind = util.bind
 var each = util.each
 var create = util.create
 var slice = util.slice
 
-module.exports = eventsPlugin
+export default eventsPlugin
 
 function eventsPlugin() {
 	var pubsub = _newPubSub()

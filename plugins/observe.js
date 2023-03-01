@@ -1,6 +1,6 @@
-var eventsPlugin = require('./events')
+import eventsPlugin from './events.js'
 
-module.exports = [eventsPlugin, observePlugin]
+export default [eventsPlugin, observePlugin]
 
 function observePlugin() {
 	return {

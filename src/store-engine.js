@@ -1,4 +1,4 @@
-var util = require('./util')
+import util from './util.js'
 var slice = util.slice
 var pluck = util.pluck
 var each = util.each
@@ -8,7 +8,7 @@ var isList = util.isList
 var isFunction = util.isFunction
 var isObject = util.isObject
 
-module.exports = {
+export default {
 	createStore: createStore
 }
 

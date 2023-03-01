@@ -1,4 +1,4 @@
-module.exports = dumpPlugin
+export default dumpPlugin
 
 function dumpPlugin() {
 	return {

@@ -1,11 +1,15 @@
-var engine = require('../src/store-engine')
+import engine from '../src/store-engine.js'
+import localStorage from  '../storages/localStorage.js'
+import sessionStorage from  '../storages/sessionStorage.js'
+import cookieStorage from  '../storages/cookieStorage.js'
+import memoryStorage from  '../storages/memoryStorage.js'
 
-var storages = [
-	require('../storages/localStorage'), 
-	require('../storages/sessionStorage'), 
-	require('../storages/cookieStorage'), 
-	require('../storages/memoryStorage'),
+const storages = [
+	localStorage,
+	sessionStorage,
+	cookieStorage,
+	memoryStorage,
 ]
 var plugins = []
 
-module.exports = engine.createStore(storages, plugins)
+export default engine.createStore(storages, plugins)

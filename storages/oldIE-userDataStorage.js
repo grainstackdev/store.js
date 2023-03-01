@@ -2,10 +2,10 @@
 // versions 6 and 7, where no localStorage, sessionStorage, etc
 // is available.
 
-var util = require('../src/util')
+import util from '../src/util.js'
 var Global = util.Global
 
-module.exports = {
+export default {
 	name: 'oldIE-userDataStorage',
 	write: write,
 	read: read,

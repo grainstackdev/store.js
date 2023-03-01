@@ -1,6 +1,6 @@
-const LZString = require('./lib/lz-string')
+import LZString from './lib/lz-string.js'
 
-module.exports = compressionPlugin
+export default compressionPlugin
 
 function compressionPlugin() {
 	return {

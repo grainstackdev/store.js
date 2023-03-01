@@ -1,6 +1,5 @@
-module.exports = json2Plugin
+import './lib/json2.js'
 
-function json2Plugin() {
-	require('./lib/json2')
+export default function json2Plugin() {
 	return {}
 }

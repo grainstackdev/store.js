@@ -1,4 +1,4 @@
-module.exports = defaultsPlugin
+export default defaultsPlugin
 
 function defaultsPlugin() {
 	var defaultValues = {}

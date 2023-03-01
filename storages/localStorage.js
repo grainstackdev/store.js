@@ -1,7 +1,7 @@
-var util = require('../src/util')
+import util from '../src/util.js'
 var Global = util.Global
 
-module.exports = {
+export default {
 	name: 'localStorage',
 	read: read,
 	write: write,

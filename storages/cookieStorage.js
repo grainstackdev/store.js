@@ -2,11 +2,11 @@
 // doesn't work but cookies do. This implementation is adopted from
 // https://developer.mozilla.org/en-US/docs/Web/API/Storage/LocalStorage
 
-var util = require('../src/util')
+import util from '../src/util.js'
 var Global = util.Global
 var trim = util.trim
 
-module.exports = {
+export default {
 	name: 'cookieStorage',
 	read: read,
 	write: write,

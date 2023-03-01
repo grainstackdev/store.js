@@ -1,6 +1,4 @@
-module.exports = updatePlugin
-
-function updatePlugin() {
+export default function updatePlugin() {
 	return {
 		update: update
 	}

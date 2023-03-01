@@ -1,7 +1,7 @@
-var dumpPlugin = require('./dump')
-var json2Plugin = require('./json2')
+import dumpPlugin from './dump.js'
+import json2Plugin from './json2.js'
 
-module.exports = [dumpPlugin, json2Plugin, v1BackcompatPlugin]
+export default [dumpPlugin, json2Plugin, v1BackcompatPlugin]
 
 function v1BackcompatPlugin() {
 	this.disabled = !this.enabled

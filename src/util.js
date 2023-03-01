@@ -3,7 +3,7 @@ var create = make_create()
 var trim = make_trim()
 var Global = (typeof window !== 'undefined' ? window : global)
 
-module.exports = {
+export default {
 	assign: assign,
 	create: create,
 	trim: trim,

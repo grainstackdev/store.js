@@ -1,6 +1,6 @@
-var engine = require('../src/store-engine')
+import engine from '../src/store-engine.js'
 
-var storages = require('../storages/all')
-var plugins = [require('../plugins/v1-backcompat')]
+import storages from '../storages/all.js'
+import plugins from '../plugins/v1-backcompat.js'
 
-module.exports = engine.createStore(storages, plugins)
+export default engine.createStore(storages, plugins)

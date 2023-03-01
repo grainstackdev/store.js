@@ -1,6 +1,6 @@
 var namespace = 'expire_mixin'
 
-module.exports = expirePlugin
+export default expirePlugin
 
 function expirePlugin() {
 	var expirations = this.createStore(this.storage, null, this._namespacePrefix+namespace)

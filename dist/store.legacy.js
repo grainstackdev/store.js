@@ -1,6 +1,6 @@
-var engine = require('../src/store-engine')
+import engine from '../src/store-engine.js'
 
-var storages = require('../storages/all')
-var plugins = [require('../plugins/json2')]
+import storages from '../storages/all.js'
+import plugins from '../plugins/json2.js'
 
-module.exports = engine.createStore(storages, plugins)
+export default engine.createStore(storages, plugins)

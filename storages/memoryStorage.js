@@ -3,7 +3,7 @@
 // However, stored values will not persist when the browser navigates to
 // a new page or reloads the current page.
 
-module.exports = {
+export default {
 	name: 'memoryStorage',
 	read: read,
 	write: write,
